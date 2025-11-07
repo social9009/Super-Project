@@ -1,7 +1,7 @@
 resource "aws_instance" "ec2" {
   ami           = var.ami
   instance_type = var.instance_type
-  key_name      = "shell.pem" 
+  key_name      = "shell" 
   tags = {
     Name = var.instance_name
   }
